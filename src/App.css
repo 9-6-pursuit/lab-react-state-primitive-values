@@ -1,4 +1,8 @@
 /* Your code here! */
+
+* {
+  background-color: beige;
+}
 main {
   margin: 25px auto;
   width: 50%;
