@@ -29,14 +29,19 @@ function App () {
     return (
       <main>
         <h2>Current Score: {score}</h2>
-        <button onClick={changeScore}>+{increment}</button>
+        <button className="add_button" onClick={changeScore}>+{increment}</button>
+        <button className="pay_ten" onClick={changeIncrements}>Pay 10 points to change from +{increment} to + {increment + 1}</button>
       </main>
 
     )
+  } else {
   }
     return (
       <main>
-        <p>React State Lab</p>
+        <div>
+          <h2>You Win!</h2>
+          <button onClick={resetCounter}> Try Again ?</button>
+        </div>
       </main>
     );
 }
