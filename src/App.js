@@ -9,7 +9,17 @@ function App () {
   function changeScore(){
     setScore(score + increment)
   }
-  
+
+  function changeIncrements(){
+   if(score < 10) {
+    window.alert(`You can't afford that!`)
+   }
+    else {
+      setIncrement(increment + 1)
+      setScore(score -10)
+    }
+  }
+
     return (
       <main>
         <p>React State Lab</p>
