@@ -17,7 +17,8 @@ function App () {
     } else {
     setScore(score-10)
     setButtonNumber(buttonNumber+1)
-  }}
+    }
+  }
 
 
   //I had to look this part up, but in order to get back to the initial page, I had the page refresh from the server instead of from the cached version.
