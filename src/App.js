@@ -20,6 +20,19 @@ function App () {
     }
   }
 
+  function resetCounter(){
+    setIncrement(1)
+    setScore(0)
+  }
+
+  if(score < 100) {
+    return (
+      <main>
+        <h2>Current Score: {score}</h2>
+      </main>
+
+    )
+  }
     return (
       <main>
         <p>React State Lab</p>
