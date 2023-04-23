@@ -1,5 +1,19 @@
 /* Your code here! */
+*{
+  background-color:lemonchiffon;
+}
 main {
   margin: 25px auto;
   width: 50%;
 }
+
+.add_button:hover{
+  color: red;
+  cursor: pointer;
+}
+
+.pay_ten:hover{
+  color: green;
+  cursor: pointer;
+}
+
