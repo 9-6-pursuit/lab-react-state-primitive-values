@@ -24,6 +24,7 @@ function App () {
   function resetGame() {
     setScore(0)
     setPointIncrement(1)
+    
   }
   return (
       <main>
@@ -34,9 +35,9 @@ function App () {
           <button onClick={increasePointIncrement}>Pay 10 points to change from +{pointIncrement} to +{pointIncrement + 1}</button>
           </div>
         ) : (
-          <h2>You Win!</h2>
+          <div><h2>You Win!</h2>
+          <button onClick={resetGame}>Play Again?</button></div>
           )}
-        <button onClick={resetGame}>Play Again?</button>
       </main>
     );
 }
