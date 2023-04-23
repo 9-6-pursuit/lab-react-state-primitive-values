@@ -29,6 +29,7 @@ function App () {
     return (
       <main>
         <h2>Current Score: {score}</h2>
+        <button onClick={changeScore}>+{increment}</button>
       </main>
 
     )
