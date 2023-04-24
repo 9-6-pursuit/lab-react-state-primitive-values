@@ -4,7 +4,7 @@ import "./App.css";
 function App () {
     return (
       <main>
-        <p>React State Lab</p>
+        <p>React State Lab Teest</p>
       </main>
     );
 }
