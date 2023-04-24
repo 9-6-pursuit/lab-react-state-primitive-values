@@ -17,6 +17,11 @@ function App () {
       window.alert("You can not afford that!")
     }
   }
+  function resetScreen(){
+    setScore(0)
+    setPointIncrement(1)
+
+  }
 
     return (
       <main>
@@ -27,7 +32,11 @@ function App () {
             <button onClick={increasePointIncrement}>Pay 10 points to change from {pointIncrement} </button>
           </div>
         ):(
-          <h2> You win!</h2>
+          <div> 
+            <h2> You win!</h2>
+          <button onClick={resetScreen}> Play again </button>
+          </div>
+          
         )}
       </main>
     );
