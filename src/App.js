@@ -5,7 +5,6 @@ import "./App.css";
 function App () {
     const [score, setscore] = useState(0)
     const [pay, setPay] = useState(1)
-    const [gameOver, setGameOver] = useState(false)
 
     function increaseScore() {
       setscore(score + pay)
@@ -21,17 +20,13 @@ function App () {
       }
     }
 
-    function handleRestart() {
+   function restartGame() {
       setscore(0)
-      setGameOver(false)
+      setPay(1)
     }
 
-  
-
-    
-
-
-    return (
+   
+      return (
       <main>
         <h1>Current Score: {score}</h1>
         {score < 100 ? (
@@ -43,7 +38,7 @@ function App () {
         ): (
         <div>
           <h2>You Win!</h2>
-          <button onclick={handleRestart}>Play again?</button>
+          <button onClick={restartGame}>Play again?</button>
         </div>
         )}
       </main>
